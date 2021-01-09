@@ -3,7 +3,7 @@ from analizador_lexico import tokens
 from analizador_lexico import analizador
 import sys
 
-# resultado del analisis
+# resultado del analisi
 resultado_gramatica = []
 
 precedence = (
@@ -47,9 +47,9 @@ def p_expresion_formulascomplejas(t):
     elif t[2] == '**':
         i = t[3]
         t[0] = "SINTAXIS CORRECTA"
-        #while i > 1:
-         #   t[0] *= t[1]
-          #  i -= 1
+        while i > 1:
+            t[0] *= t[1]
+             i -= 1
 
 def p_expresion_operaciones(t):
     '''

@@ -49,7 +49,7 @@ def p_expresion_formulascomplejas(t):
         t[0] = "SINTAXIS CORRECTA"
         while i > 1:
             t[0] *= t[1]
-             i -= 1
+            i -= 1
 
 def p_expresion_operaciones(t):
     '''

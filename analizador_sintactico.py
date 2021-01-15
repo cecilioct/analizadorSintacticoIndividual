@@ -170,7 +170,7 @@ def p_expresion_nombre(t):
     try:
         t[0] = nombres[t[1]]
     except LookupError:
-        print("Nombre desconocido ", t[1])
+        print("nombre desconocido>", t[1])
         t[0] = 0
 
 def p_expresion_bucles(t):

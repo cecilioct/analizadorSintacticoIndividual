@@ -19,9 +19,9 @@ def p_declaracion_asignar(t):
     nombres[t[1]] = t[3]
 
 def p_declaracion_expr(t):
-    'declaracion : expresion'
+    'declaracion : IDENTIFICADOR expresion PUNTOCOMA'
     # print("Resultado: " + str(t[1]))
-    t[0] = t[1]
+    nombres [t[0]] = t[1]
 
 def p_expresion_formulascomplejas(t):
     '''

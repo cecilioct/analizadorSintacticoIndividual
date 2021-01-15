@@ -3,7 +3,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.uic.properties import QtGui
 
-""" """
+""" Importamos todas nuetras Ventana y funciones utiles"""
 from vista.home import  *
 from analizador_lexico import *
 from analizador_sintactico import *
